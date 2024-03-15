@@ -5,6 +5,9 @@ import urllib.request
 import urllib.parse
 import random
 
+from PIL import Image
+import io
+
 server_address = "127.0.0.1:8188"
 client_id = str(uuid.uuid4())
 
@@ -67,12 +70,11 @@ prompt["3"]["inputs"]["seed"] =  random.randint(1, 10000) # 1から10000の間�
 
 ws = websocket.WebSocket()
 ws.connect("ws://{}/ws?clientId={}".format(server_address, client_id))
+
 images = get_images(ws, prompt)
 
 # 実行
 for node_id in images:
   for image_data in images[node_id]:
-    from PIL import Image
-    import io
     image = Image.open(io.BytesIO(image_data))
     image.show()

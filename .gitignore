@@ -17,3 +17,9 @@
 /ComfyUI/.ci/
 
 **/__pycache__/
+
+
+SDonTD.*.toe
+/Backup/
+
+/webcamimages/

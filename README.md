@@ -6,6 +6,13 @@ https://github.com/comfyanonymous/ComfyUI/tree/master/script_examples
 
 # Setup
 
+## Install Python
+TouchDesignerのPythonバージョンに合わせて、環境を用意してね
+```
+import sys
+print(sys.version)
+```
+
 ## Install ComfyUI Modules
 ```
 $cd ComfyUI/
@@ -14,7 +21,7 @@ $pip install -r requirements.txt
 
 ## Install Client Modules
 ```
-$pip install pillow
+$pip install numpy decode websocket-client pillow
 ```
 
 ## ComfyUIの起動

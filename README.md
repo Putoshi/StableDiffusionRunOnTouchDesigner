@@ -24,7 +24,7 @@ $pip install -r requirements.txt
 $pip install numpy decode websocket-client pillow
 ```
 
-## ComfyUIの起動
+## ComfyUIの起動 ※TouchDesignerを立ち上げてから起動する
 ```
 $cd ComfyUI/
 $python main.py --cpu

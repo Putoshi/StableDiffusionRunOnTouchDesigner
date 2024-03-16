@@ -30,6 +30,11 @@ $cd ComfyUI/
 $python main.py --cpu
 
 ```
+## ComfyUIの停止
+```
+ctrl+c
+
+```
 
 ### ComfyUIのサーバー設定
 #### 1. WebUIをブラウザで開く。=> http://127.0.0.1:8188/
